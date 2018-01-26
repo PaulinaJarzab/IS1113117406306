@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-         <title>117406306</title>
-         <link rel="stylesheet" href="mystylesheet.css" type="text/css" />
+        <title>117406306</title>
+        <link rel="stylesheet" href="mystylesheet.css" type="text/css" />
         
-         <style>
-         body {
-           background-color : gray;
-         }
-         h1 {
+        <style>
+        h1 {
             font-family: "Courier New", Monospace;
          }
-         
-         
-       </style>
+         .btn {
+        border: none;
+        color: white;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        }
+
+        .info {background-color: #2196F3;} /* Blue */
+        .info:hover {background: #0b7dda;}
+        .success {background-color: #f44336;} /* Red */ 
+        .success:hover {background: #da190b;}
+        </style>
     </head>
     <body>
-       
-        <h1 style="border:2px solid Tomato;" class= "mainheading">117406306 - IS1113 Project!</h1>
-        <a href="CV/cv_page1.html">Curriculum Vitae</a>
-        <a href="Interests/sports.html">Interests</a>
-        
+        <div id="grad1"></div>
+        <h1 style="border:2px;" class= "mainheading">117406306 - IS1113 Project!</h1>
+        <button class="btn success"><a href="CV/cv_page1.html">Curriculum Vitae</a></button>
+        </br>
+        </br>
+        <button class="btn info"><a href="Interests/sports.html">Interests</a></button>
     </body>
 </html>
