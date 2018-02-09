@@ -1,17 +1,23 @@
 #section1{
-    background-color: rgb(238, 0, 90);
+    background: url(http://3.bp.blogspot.com/-qrkz1RsTYzc/T0ABMkLwJQI/AAAAAAAAAFw/5k34Dq63CFA/s1600/warsaw_poland_photo.jpg) no-repeat center fixed;
+    background-size: cover;
+    color:black;
 }
 #section2{
-    background-color: rgb(44, 62, 80);
+     background: url(http://travel.home.sndimg.com/content/dam/images/travel/fullset/2014/12/12/hub-greece.jpg.rend.hgtvcom.966.725.jpeg) no-repeat center fixed;
+    background-size: cover;
+    color:white;
 }
 #section3{
-    background-color: rgb(51, 153, 204)
+    background: url(http://www.californiabeaches.com/wp-content/uploads/2017/02/Fort-Ord-Dunes-State-Park-15912407424.jpg) no-repeat center fixed;
+    background-size: cover;
+    color:black;
 }
 .section{
     text-align: center;
-    color: white;
+   
 }
 #pagepiling{
     font-family:"Lucinda Console", Monospace;
-    font-size: 40px;
+    font-size: 60px;
 }
