@@ -1,5 +1,7 @@
 .mainheading{
     text-align: center;
+   
+    font-size: 60px;
 }
 
 
@@ -8,6 +10,9 @@
     background-color: white;
     height: 30px;
     text-align: center;
+    
+    font-size: 20px;
+    
 }
 
 .maindiv{
@@ -40,4 +45,4 @@
 }
 
 
-
+ 

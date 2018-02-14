@@ -2,21 +2,31 @@
 <html>
     <head>
         <title>117406306</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+        <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
         
         <style>
          h1 {
-            font-family: "Courier New", Monospace;
+            color: white;
             text-align: center;
+            font-family: 'Corben', Georgia, Times, serif;
             font-size: 50px ;
+            text-shadow: 1px 1px 1px #ccc;
+
          }
+         
+        ul {
+        font-family: 'Nobile', Helvetica, Arial, sans-serif;
+        }
         body {
-        background: url(http://p1.pichost.me/i/62/1863911.png) no-repeat center fixed;
+        background: url(https://wallpapercave.com/wp/D5dDgOG.jpg) no-repeat center fixed;
         background-size: cover;
         } 
        
-         
          .btn {
         border: none;
         color: white;
@@ -36,11 +46,11 @@
          padding: 0;
          overflow: hidden;
          background-color: #333;
-         width: 40%;
+         width: 100%;
         }
         
         li {
-         float: left;
+         float: right;
         }
 
         li a, .dropbtn {
@@ -82,37 +92,24 @@
             display: block;
         }
         
-        /* Add a gray right border to all list items, except the last item (last-child) */
+        /* Add a gray right border to all list items */
         li {
          border-right: 1px solid #bbb;
         }
-        li:last-child {
-         border-right: none;
-        } 
-
-        
-        
+      
 
         </style>
     </head>
+    
     <body>
+    <ul style="text-align:center;" class="dropdown;">
+        <li><a href="info.html"> Info <i class="fa fa-info"></i></a></li>
+        <li><a href="https://github.com/PaulinaJarzab/IS1113117406306">GitHub <i class="fa fa-user"></i></a></li>
+        <li><a href="ebusiness/Ebus1.php">E-Business <i class="fa fa-briefcase"></i></a></li>
         
-        <h1 style="border:2px;" class= "mainheading">117406306 - IS1113 Project!</h1>
-    <ul style="text-align:center;">
-           
-        <li><a href="homepage.html"><i class="fa fa-home"></i> Home</a></li>
-           
-        <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn"> My Information <i class="fa fa-caret-down"></i></a>
-         <div class="dropdown-content">
-            <a href="CV/cv_page1.html">Personal Details</a>
-            <a href="CV/cv_page2.html">Educational Details</a> 
-            <a href="CV/cv_page3.html">Work Experience</a>
-        </div>
-        </li>
-       
-       
-        <li class="dropdown">
+        
+        
+           <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Interests <i class="fa fa-heart"></i></a>
          <div class="dropdown-content">
             <a href="Interests/sports.html">Sports</a>
@@ -121,11 +118,125 @@
          </div>
         </li>
         
-       <li><a href="ebusiness/Ebus1.php">E-Business <i class="fa fa-briefcase"></i></a></li>
-       
-       <li><a href="https://github.com/PaulinaJarzab/IS1113117406306">GitHub <i class="fa fa-user"></i></a></li>
-       
+         <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn"> My Resume <i class="fa fa-caret-down"></i></a>
+         <div class="dropdown-content">
+            <a href="CV/cv_page1.html">Personal Details</a>
+            <a href="CV/cv_page2.html">Educational Details</a> 
+            <a href="CV/cv_page3.html">Work Experience</a>
+        </div>
+        </li>
+           
+        <li><a href="homepage.html"> Home <i class="fa fa-home"></i></a></li>
     </ul>
+    
+    
+    <!--Code for sidebar extracted from = "https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_sidebar_shift"-->
+    
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+      <button class="w3-bar-item w3-button w3-large"
+     onclick="w3_close()">Close &times;</button>
+      <a href="#" class="w3-bar-item w3-button"> Contact </a>
+      <a href="#" class="w3-bar-item w3-button"> W3SCHOOLS </a>
+      <a href="#" class="w3-bar-item w3-button"> Heroku </a>
+      <a href="#" class="w3-bar-item w3-button"> News </a>
+    </div>
+    
+    <div id="main">
+
+    <div class="w3-teal">
+      <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+      <div class="w3-container">
+    </div>
+
+   
+
+    </div>
+
+    <script>
+    function w3_open() {
+    document.getElementById("main").style.marginLeft = "25%";
+    document.getElementById("mySidebar").style.width = "25%";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("openNav").style.display = 'none';
+    }
+    function w3_close() {
+    document.getElementById("main").style.marginLeft = "0%";
+    document.getElementById("mySidebar").style.display = "none";
+     document.getElementById("openNav").style.display = "inline-block";
+    }
+    </script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
         
+            
     </body>
 </html>
