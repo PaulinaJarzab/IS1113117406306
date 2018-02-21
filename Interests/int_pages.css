@@ -21,3 +21,24 @@
     font-family:"Lucinda Console", Monospace;
     font-size: 60px;
 }
+#section4{
+    background: url(https://cdn.wallpapersafari.com/37/48/dxjKpR.jpg) no-repeat center fixed;
+    background-size: cover;
+    color:black;
+}
+#section5{
+    background: url(http://blog.blenderbox.com/wp-content/themes/grits/images/backgrounds/main.jpg) no-repeat center fixed;
+    background-size: cover;
+    color: white;
+}
+#section6{
+    background: url(http://g02.a.alicdn.com/kf/HTB1E52eJpXXXXXsXpXXq6xXFXXXE/5x7ft-customize-fantasy-photography-backdrop-muslin-style-vinyl-digital-cloth-for-portrait-photo-studio-background-MH.jpg) no-repeat center fixed;
+    background-size: cover;
+    color: white;
+}
+#section7 {
+background: url(http://www.designbolts.com/wp-content/uploads/2014/03/Bright-Blue1.jpg) no-repeat center fixed;
+background-size: cover;
+color: white;
+}
+    
