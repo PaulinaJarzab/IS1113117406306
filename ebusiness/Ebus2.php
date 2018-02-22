@@ -9,21 +9,94 @@ session_start();
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    </head>
+         
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        
+        
+        </head>
     <body>
-        <h4>Please enter your payment details.</h4>
-        <br>
-            <form method = "POST" action = "Ebus3.php">
-                <label for="user_pin">
-                     PIN 
+        <div data-role="main" class="ui-content">
+        <form method = "POST" action = "Ebus3.php" >
+        <h1> Contact Information </h1>
+       
+         <label for="email">
                 </label>
-                <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4">
+                <input type="text" id="email" placeholder= "E-mail">
+ 
+                <br>
+        <h2> Shipping Address </h2>
+         <label for="firstname">
+                </label>
+                <input type="text" id="firstname" placeholder= "First Name">
+                
+         <label for="lastname">
+                </label>
+                <input type="text" id="lastname" placeholder= "Last Name">
+  
+         <label for="address">
+                </label>
+                <input type="text" id="address" placeholder= "Address" >
+                
+         <label for="city">
+                </label>
+                <input type="text" id="city" placeholder= "City" >
+            
+             
+             <select id = "myList">
+               <option value = "1">Ireland</option>
+               <option value = "2">United Kindom</option>
+               <option value = "3">Germany</option>
+               <option value = "4">France</option>
+             </select>
+       
+         <label for="postalcode">
+                </label>
+                <input type="text" id="postalcode" placeholder= "Postal Code" >
+                
+    
+                <label for="number">
+                </label>
+                <input type="number" id="number" placeholder= "Telephone Number" maxlength="10">
+                
+                <br>
+                <br>
+                
+                <h3>Payment Method</h3>
+                
+                <label for="cardnumber">
+                </label>
+                <input type="number" id="cardnumber" placeholder="Card Number" maxlength="16">
+                
+   
+                <label for="name">
+                </label>
+                <input type="text" id="name" placeholder= "Cardholder Name">
+    
+    
+                <label for="mmyy">
+                </label>
+                <input type="text" id="mmyy" placeholder= "MM/YY" maxlength= "7" >
+                
+                
+                 
+                <label for="user_pin">
+                </label>
+                <input type="password" id="user_pin" placeholder= "CVV" maxlength= "3" >
+                
+     
                 <button type="Submit" id="btnPurchase" disabled> 
                     Proceed with Purchase 
                 </button>
+                
             </form>
+            
             <br>
+            
             <button onClick="validateDetails()"> Validate </button>
+            
         <script type="text/javascript" src="Ebus2_validator.js"></script>
         <?php
         // Set session variables
