@@ -9,7 +9,7 @@ session_start();
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="cost_calc.js"></script>
+        <script src="cost_calc.js"></script>
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
@@ -53,13 +53,13 @@ session_start();
         
         <br>
         
-        <label for="cloud 9"> Cloud 9 @ $200 </label>
-        <input type="radio" name="product" id="cloud 9" checked onClick="disablebtnProceed()"/>
+        <label for="cloud9"> Cloud 9 @ $200 </label>
+        <input type="radio" name="product" id="cloud9" checked onClick="disablebtnProceed()"/>
         
         <br>
         
-        <label for="amazon web services"> Amazon Web Services @ $300 </label>
-        <input type="radio" name="product" id="amazon web services" checked onClick="disablebtnProceed()"/>
+        <label for="amazonwebservices"> Amazon Web Services @ $300 </label>
+        <input type="radio" name="product" id="amazonwebservices" checked onClick="disablebtnProceed()"/>
         
         <br>
         

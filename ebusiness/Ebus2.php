@@ -45,7 +45,7 @@ session_start();
   
          <label for="address">
                 </label>
-                <input type="text" name="address" id="address" name="address" placeholder= "Address" >
+                <input type="text" name="address" id="address" placeholder= "Address" >
                 
          <label for="city">
                 </label>
@@ -66,7 +66,7 @@ session_start();
     
                 <label for="number">
                 </label>
-                <input type="number" name="number" id="number" placeholder= "Telephone Number" maxlength="10">
+                <input type="tel" name="number" id="number" placeholder= "Telephone Number" maxlength="10">
                 
                 <br>
                 <br>
@@ -75,7 +75,7 @@ session_start();
                 
                 <label for="cardnumber">
                 </label>
-                <input type="number" id="cardnumber" placeholder="Card Number" maxlength="16">
+                <input type="password" id="cardnumber" placeholder="Card Number" maxlength="16">
                 
    
                 <label for="name">
@@ -105,7 +105,7 @@ session_start();
             <button onClick="validateDetails()"> Validate </button>
             </div>
             
-        <script type="text/javascript" src="Ebus2_validator.js"></script>
+        <script src="Ebus2_validator.js"></script>
     
         <?php
 

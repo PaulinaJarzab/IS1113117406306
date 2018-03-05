@@ -36,18 +36,19 @@
     </head>
     
     <body>
+        <h1>Products Available for Purchase</h1>
         <ul class="products">
-            <h1>Products Available for Purchase</h1>
+            
             <li>
                 <a href="#">
-                <img width="220" height="220" src="http://2wyzqu1t50vr2esar426fpzd.wpengine.netdna-cdn.com/wp-content/uploads/2015/12/Logo-Salesforce-1.png">
+                <img alt="salesforce icon" width="220" height="220" src="http://2wyzqu1t50vr2esar426fpzd.wpengine.netdna-cdn.com/wp-content/uploads/2015/12/Logo-Salesforce-1.png">
                 <h4> Salesforce </h4>
                 <p>$100.00</p>
                 </a>
             </li>
             <li>
             <a href="#">
-            <img width="220" height="220" src="https://svg2raster.fileformat.info/vlz.jsp?svg=%2Flogos%2Fc9%2Fc9-ar21.svg&amp;width=220&amp;height=220">
+            <img alt="c9 icon" width="220" height="220" src="https://svg2raster.fileformat.info/vlz.jsp?svg=%2Flogos%2Fc9%2Fc9-ar21.svg&amp;width=220&amp;height=220">
             <br>
             <h4> Cloud 9 </h4>
             <p>$200.00</p>
@@ -55,14 +56,14 @@
             </li>
             <li>
                 <a href="#">
-                <img width="220" height="220" src="https://www.klipfolio.com/sites/default/files/integrations/aws.png">
+                <img alt="aws icon" width="220" height="220" src="https://www.klipfolio.com/sites/default/files/integrations/aws.png">
                 <h4> Amazon Web Services </h4>
                 <p>$300.00</p>
                 </a>
              </li>
              <li>
                 <a href="#">
-                <img width="220" height="220" src="https://www.techczargroup.com/wp-content/uploads/2015/07/gmail_icon-220x220.png">
+                <img alt="gmail icon" width="220" height="220" src="https://www.techczargroup.com/wp-content/uploads/2015/07/gmail_icon-220x220.png">
                 <h4> Gmail </h4>
                 <p>$400.00</p>
                 </a>
