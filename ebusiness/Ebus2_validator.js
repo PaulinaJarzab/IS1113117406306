@@ -74,10 +74,10 @@ function validateDetails(){
     var number;
     number = document.getElementById("number").value;
     if (pin==""){
-        alert("Please enter your CVV");
+        alert("Please enter your phone number");
         }
-    else if (String(pin).length<3){
-        alert("Please make sure your CVV is accurate");
+    else if (String(pin).length<10){
+        alert("Please make sure your phone number is accurate");
         }
     else{
         enablebtnPurchase();
@@ -88,6 +88,9 @@ function validateDetails(){
     if (cardnumber== ""){
         alert("Please enter your Card Number");
          return false;
+        }
+    else if (String(mmyy).length<16){
+        alert("Please make sure your Card Number is accurate");
         }
     else{
         enablebtnPurchase();
@@ -118,10 +121,10 @@ function validateDetails(){
     var pin;
     pin = document.getElementById("user_pin").value;
     if (pin==""){
-        alert("Please enter your CVV");
+        alert("Please enter your PIN");
         }
-    else if (String(pin).length<3){
-        alert("Please make sure your CVV is accurate");
+    else if (String(pin).length<4){
+        alert("Please make sure your PIN is accurate");
         }
     else{
         enablebtnPurchase();
@@ -134,4 +137,7 @@ function enablebtnPurchase(){
 }
 function disablebtnPurchase(){
      $('#btnPurchase').prop('disabled',true);
+}
+function MyFunction(){
+    
 }

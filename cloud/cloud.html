@@ -2,24 +2,42 @@
 <html>
     <head>
         <title>Work</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
         <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
+        <link rel="stylesheet" href="../Interests/int_pages.css" type="text/css"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-        <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css"/>
+        <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css"/>
         
-        <!--Adding Bootstrap-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+         
+       
+       <!--Adding Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"/>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+   
+         <!--Page Piling-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.js"></script>
+        
+        <script type = "text/javascript">
+           $(document).ready(function() {
+    	    $('#pagepiling').pagepiling({
+            });
+           });
+        </script>
         
         <style>
+        
         h1 {
         font-family: "Courier New", Monospace;
-        font-size: 65px;
+        font-size: 55px;
         text-align: center;
         } 
   
@@ -40,82 +58,126 @@
         background-size: cover;
         } 
         
-       
-        
-        
+        ul {
+            font-size: 25px;
+            text-align:left;
+        }
+   
   
         </style>
         
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-        $(document).ready(function(){
-        $("#hide").click(function(){
-        $("p").hide();
-        $("h1").hide();
-        $("a1").hide();
-        
-        });
-        $("#show").click(function(){
-        $("p").show();
-        $("h1").show();
-        $("a1").show();
-        });
-        });
-        </script>
+       
     
     </head>
     <body>
-        <!--Code for sidebar extracted from = "https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_sidebar_shift"-->
         
-        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar" >
-        <button  id="show" class= "w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times; </button>
-        <a href="../cloud/Uses.html" class="w3-bar-item w3-button"><i class="fa fa-arrow-right"></i> Uses Of Cloud Computing </a>
-        <a href="../cloud/benefits.html" class="w3-bar-item w3-button"><i class="fa fa-arrow-right"></i> Top Benefits Of Cloud Computing </a>
-        <a href="../cloud/services.html" class="w3-bar-item w3-button"><i class="fa fa-arrow-right"></i> Types Of Cloud Services </a>
-        <a href="../cloud/deployments.html" class="w3-bar-item w3-button"><i class="fa fa-arrow-right"></i> Types Of Cloud Deployments </a>
-        <a href="../cloud/works.html" class="w3-bar-item w3-button"><i class="fa fa-arrow-right"></i> How Cloud Computing Works </a>
+        <div id="pagepiling">
+        <div class="section" id="section12"><h1><i class="fa fa-cloud"></i> What Is Cloud Computing? <i class="fa fa-cloud"></i></h1>
+	        <p>
+	           In the simplest terms, cloud computing means storing and accessing data and programs over the Internet instead of your computer's hard drive.
+               The cloud is just a metaphor for the Internet.
+               It goes back to the days of flowcharts and presentations that would represent the gigantic server-farm infrastructure of the Internet as nothing but a puffy,
+               white cumulus cloud, accepting connections and doling out information as it floats.
+            </p>
+            <br>
+	    </div>
+	    
+	    <div class="section" id="section13"><h1><i class="fa fa-code-branch"></i> Uses of cloud computing <i class="fa fa-code-branch"></i></h1>
+	        <p>
+                If you use an online service to send emails, edit documents, watch films or TV, listen to music, play games,
+                or store pictures and other files, it is likely that cloud computing is making it all possible behind the scenes.
+                The first cloud computing services are barely a decade old, but already a variety of organisations - 
+                from tiny start-ups to global corporations, from government agencies to non-profits -
+                are embracing the technology for all sorts of reasons. Here are a few of the things you can do with the cloud:
+                <ul>
+                    <li>Create new apps and services</li>
+                    <li>Store, back up and recover data</li>
+                    <li>Host websites and blogs</li>
+                    <li>Stream audio and video</li>
+                    <li>Deliver software on demand</li>
+                    <li>Analyse data for patterns and make predictions</li>
+                </ul>
+            </p>
         </div>
         
-    
-        <div id="main">
-
-        <div class="w3">
-        <button button id="hide" id="openNav" class="w3-button  w3-xlarge align " onclick="w3_open()">&#9776;</button>
-        <div class="w3-container">
+        <div class="section" id="section14"><h1><i class="fa fa-plus"></i> Top Benefits Of Cloud Computing <i class="fa fa-plus"></i></h1>
+            <ul>
+                <li>
+                    Cloud computing is a big shift from the traditional way businesses think about IT resources.
+                    Here are 3 common reasons organizations are turning to cloud computing services:
+                </li>
+            </ul>
+            
+            <h2> 1. Cost <i class="fa fa-dollar-sign"></i> </h2>
+            
+            <p>
+                Cloud computing eliminates the capital expense of buying hardware and software and setting up and running on-site datacenters—the racks of servers, 
+                the round-the-clock electricity for power and cooling, the IT experts for managing the infrastructure. It adds up fast. 
+            </p>
+            
+            <h3> 2. Speed <i class="fa fa-angle-double-right"></i></h3>
+            
+            <p>
+                Most cloud computing services are provided self service and on demand, so even vast amounts of computing resources can be provisioned in minutes,
+                typically with just a few mouse clicks, giving businesses a lot of flexibility and taking the pressure off capacity planning. 
+            </p>
+            
+            <h4> 3. Global scale <i class="fa fa-globe"></i> </h4>
+            
+            <p>
+                The benefits of cloud computing services include the ability to scale elastically. In cloud speak, that means delivering the right amount of IT resources—for example,
+                more or less computing power, storage, bandwidth—right when its needed, and from the right geographic location. 
+            </p>
+            <br>
+	    </div>             
+       
+        <div class="section" id="section16"><h1><i class="fa fa-code-branch"></i> How Cloud Computing Works <i class="fa fa-code-branch"></i></h1>
+            <p>
+                Cloud computing services all work a little differently, depending on the provider.
+                But many provide a friendly, browser-based dashboard that makes it easier for IT professionals and developers to order resources and manage their accounts. 
+                Some cloud computing services are also designed to work with REST APIs and a command-line interface (CLI), giving developers multiple options.
+            </p>
+            <br> 
         </div>
-        </div>
-
-        <script>
-        function w3_open() {
-        document.getElementById("main").style.marginLeft = "25%";
-        document.getElementById("mySidebar").style.width = "25%";
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("openNav").style.display = 'none';
-        }
-        function w3_close() {
-        document.getElementById("main").style.marginLeft = "0%";
-        document.getElementById("mySidebar").style.display = "none";
-        document.getElementById("openNav").style.display = "inline-block";
-        }
-        </script>
-        <h1 class="mainheading"> <i class="fa fa-cloud"></i> What Is Cloud Computing? <i class="fa fa-cloud"></i> </h1>
         
-        <p>In the simplest terms, cloud computing means storing and accessing data and programs over the Internet instead of your computer's hard drive.
-        The cloud is just a metaphor for the Internet.
-        It goes back to the days of flowcharts and presentations that would represent the gigantic server-farm infrastructure of the Internet as nothing but a puffy,
-        white cumulus cloud, accepting connections and doling out information as it floats.</p>
-        <br>
-        <p
-        <div style= "text-align: center;"  >
-    	<a href="../cloud/Uses.html" class="btn btn-success"> Next </a>
+        <div class="section" id="section15"><h1><i class="fa fa-plus"></i>Types Of Cloud Services:IaaS,PaaS,SaaS<i class="fa fa-plus"></i></h1>
+            <ul>
+                <li> 
+                    Most cloud computing services fall into three broad categories: infrastructure as a service (IaaS), platform as a service (PaaS),
+                    and software as a service (Saas). These are sometimes called the cloud computing stack, 
+                    because they build on top of one another. Knowing what they are and how they’re different makes it easier to accomplish your business goals.
+                </li>
+            </ul>
+        
+            <h2> Infrastructure-as-a-service (IaaS) </h2>
+            <p>
+                The most basic category of cloud computing services. With IaaS, you rent IT infrastructure—servers and virtual machines (VMs),
+                storage, networks, operating systems—from a cloud provider on a pay-as-you-go basis. 
+            </p>
+        
+            <h3> Platform as a service (PaaS) </h3>
+            <p>
+                Platform-as-a-service (PaaS) refers to cloud computing services that supply an on-demand environment for developing,
+                testing, delivering, and managing software applications. PaaS is designed to make it easier for developers to quickly create web or mobile apps,
+                without worrying about setting up or managing the underlying infrastructure of servers, storage, network, and databases needed for development. 
+            </p>
+        
+            <h4> Software as a service (SaaS) </h4>
+            <p>
+                Software-as-a-service (SaaS) is a method for delivering software applications over the Internet, on demand and typically on a subscription basis.
+                With SaaS, cloud providers host and manage the software application and underlying infrastructure, and handle any maintenance,
+                like software upgrades and security patching. Users connect to the application over the Internet, usually with a web browser on their phone,
+                tablet, or PC. 
+            </p>
+        
+            <br>
         </div>
-        </p>
-        <p
+        
+        </div>
         <div style= "text-align: center;">
         <a href="../homepage.html" class="btn btn-success"> Home </a>
         </div>
-        </p>
         
-      
+        
     </body>
 </html>

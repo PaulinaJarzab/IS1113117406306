@@ -1,3 +1,7 @@
+<?php
+// start the session
+session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,11 +28,7 @@
                 
             }
           
-            dv {
-                position: absolute;
-                margin-top: 0;
-                vertical-align: middle;
-            }
+            
            
         </style>  
     </head>
@@ -38,9 +38,9 @@
         
         
         
-        
+       
   <div data-role="main" class="ui-content">
-      
+ 
     <form method="POST" action="Ebus2.php">
         
       <fieldset data-role="controlgroup" data-type="vertical">
@@ -108,10 +108,10 @@
             
                 <button onClick="calcSub()">Calculate Cost</button>
                 <br>
-                
+         
                
     </div>
    
-              
+         
     </body>
 </html>

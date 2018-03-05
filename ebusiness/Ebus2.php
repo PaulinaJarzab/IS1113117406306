@@ -1,7 +1,8 @@
 <?php
-// start the session
+// Start the session
 session_start();
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,18 +16,24 @@ session_start();
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         
+       
         
         </head>
     <body>
         <div data-role="main" class="ui-content">
-        <form method = "POST" action = "Ebus3.php" >
+        
+        <form method="POST" action="Ebus3.php" >
+        
+            
         <h1> Contact Information </h1>
        
          <label for="email">
                 </label>
-                <input type="text" id="email" placeholder= "E-mail">
+                <input id="email" name="email" placeholder= "E-mail">
  
                 <br>
+
+                
         <h2> Shipping Address </h2>
          <label for="firstname">
                 </label>
@@ -38,14 +45,14 @@ session_start();
   
          <label for="address">
                 </label>
-                <input type="text" id="address" placeholder= "Address" >
+                <input type="text" name="address" id="address" name="address" placeholder= "Address" >
                 
          <label for="city">
                 </label>
-                <input type="text" id="city" placeholder= "City" >
+                <input type="text" name="city" id="city" placeholder= "City" >
             
              
-             <select id = "myList">
+             <select id = "myList" name="myList" >
                <option value = "1">Ireland</option>
                <option value = "2">United Kindom</option>
                <option value = "3">Germany</option>
@@ -54,12 +61,12 @@ session_start();
        
          <label for="postalcode">
                 </label>
-                <input type="text" id="postalcode" placeholder= "Postal Code" >
+                <input type="text" name="postalcode" id="postalcode" placeholder= "Postal Code" >
                 
     
                 <label for="number">
                 </label>
-                <input type="number" id="number" placeholder= "Telephone Number" maxlength="10">
+                <input type="number" name="number" id="number" placeholder= "Telephone Number" maxlength="10">
                 
                 <br>
                 <br>
@@ -73,7 +80,7 @@ session_start();
    
                 <label for="name">
                 </label>
-                <input type="text" id="name" placeholder= "Cardholder Name">
+                <input type="text" id="name" name="name" placeholder= "Cardholder Name">
     
     
                 <label for="mmyy">
@@ -84,7 +91,7 @@ session_start();
                  
                 <label for="user_pin">
                 </label>
-                <input type="password" id="user_pin" placeholder= "CVV" maxlength= "3" >
+                <input type="password" id="user_pin" placeholder= "Card PIN" maxlength= "4" >
                 
      
                 <button type="Submit" id="btnPurchase" disabled> 
@@ -96,11 +103,16 @@ session_start();
             <br>
             
             <button onClick="validateDetails()"> Validate </button>
+            </div>
             
         <script type="text/javascript" src="Ebus2_validator.js"></script>
+    
         <?php
-        // Set session variables
-        $_SESSION["total"] = $_POST["total"];
-        ?>
+
+            // Set session variables
+
+            $_SESSION["total"] = $_POST["total"];
+
+            ?>
     </body>
 </html>
