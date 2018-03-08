@@ -67,10 +67,7 @@ session_start();
         font-size:14px;
       }
       
-      .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
-        
-      }
-      
+  
       h1 {
             font-size: 50px;
             text-align:center;
@@ -88,24 +85,9 @@ session_start();
       
 </style>
 
-        
-        
-        
-        
+ 
     </head>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  
     
 <body>
      
@@ -185,8 +167,7 @@ session_start();
                 </label>
                 
                 <br>
-                
-        
+
             
                 <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
                 
