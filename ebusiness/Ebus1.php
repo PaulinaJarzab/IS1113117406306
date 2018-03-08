@@ -8,58 +8,156 @@ session_start();
 <html>
     
     <head>
+      
+      <title>Order</title>
+      
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link title="oEmbed Form" href="https://www.jotform.com/oembed/?format=json&amp;url=http%3A%2F%2Fwww.jotform.com%2Fform%2F21072246732346" rel="alternate" type="application/json+oembed"><link title="oEmbed Form" href="https://www.jotform.com/oembed/?format=xml&amp;url=http%3A%2F%2Fwww.jotform.com%2Fform%2F21072246732346" rel="alternate" type="text/xml+oembed">
+      <meta content="JotForm" property="og:title">
+      <meta content="http://www.jotformeu.com/form/21072246732346" property="og:url">
+      <meta content="Please click the link to complete this form." property="og:description">
+      <link href="https://cdn.jotfor.ms/favicon.ico" rel="shortcut icon">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <meta name="HandheldFriendly" content="true">
+
+      <link href="https://www.jotform.com/form-templates/paypal-pro-payment-form" rel="canonical">
+      <link href="https://cdn.jotfor.ms/static/formCss.css?3.3.5070" rel="stylesheet" type="text/css">
+      <link href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.5070" rel="stylesheet" type="text/css">
+      <link href="https://cdn.jotfor.ms/css/printForm.css?3.3.5070" rel="stylesheet" type="text/css" media="print">
+
+
+
+
+      
+      <!--jQuery-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="cost_calc.js"></script>
         
-        <title>Select Product</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         
-        <!--jQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="cost_calc.js"></script>
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-        
-        <style>
-        
-        h1 {
+      <style type="text/css">
+
+      .form-label-left{
+        width:150px;
+      }
+      
+      .form-line{
+        padding-top:12px;
+        padding-bottom:12px;
+      }
+      
+      .form-label-right{
+        width:150px;
+      }
+      
+      body, html{
+        margin:0;
+        padding:0;
+        background:false;
+      }
+
+      .form-all{
+        margin:0px auto;
+        padding-top:0px;
+        width:590px;
+        font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+        font-size:14px;
+      }
+      
+      .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
+        color: false;
+      }
+      
+      h1 {
             font-size: 50px;
             text-align:center;
-        }
+      }
         
-        form {
+      form {
             text-align:center;
             font-size: 25px;
-        }
-          
-        </style>  
+      }
+      
+      button {
+        position:absolute;
+        
+      }
+      
+</style>
+
+        
+        
+        
         
     </head>
     
-    <body>
-        <div data-role="main" class="ui-content">
-             
-            <h1>Select a Product</h1>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<body>
+     
+ <form method="POST" action="Ebus2.php">
+  
             
-            <form method="POST" action="Ebus2.php">
-        
-                <fieldset data-role="controlgroup" data-type="vertical">
-         
+            <h1 class="form-header" id="header_1" data-component="header">
+              
+              Select Product(s)
+           
+            </h1>
+            
+           <h5> Would you like to buy one of our items?</h5>
+              
+             <h2> My Products </h2>
+             
+            <div class="form-input" id="cid_3">
+            <fieldset data-role="controlgroup" data-type="vertical"> 
+
+              
                     <label for="salesforce"> SalesForce @ $100 </label>
                     <input type="radio" name="product" id="salesforce" checked onClick="disablebtnProceed()"/>
+                    
+                    
+                    
+                    
         
                     <label for="cloud9"> Cloud 9 @ $200 </label>
                     <input type="radio" name="product" id="cloud9" checked onClick="disablebtnProceed()"/>
+                    
+                    
+                    
+                    
+                    
 
                     <label for="amazonwebservices"> Amazon Web Services @ $300 </label>
                     <input type="radio" name="product" id="amazonwebservices" checked onClick="disablebtnProceed()"/>
+                    
+                    
+                    
+                    
+                    
+                    
    
                     <label for="gmail"> Gmail @ $400 </label>
                     <input type="radio" name="product" id="gmail" checked onClick="disablebtnProceed()"/>
-
+                    
                 </fieldset>
-   
-                <label for="subtotal">
+                
+                
+                
+               <label for="subtotal">
                 Sub Total:
                 <input type="text" id="subtotal" value="0.00" readonly/>
                 </label>
@@ -88,17 +186,47 @@ session_start();
                 
                 <br>
                 
+                
+                
+            <table class="form-address-table payment-form-table" style="border:0;" cellspacing="0" cellpadding="4">
+              <tbody>
+                <tr>
+                  <th style="text-align:left;" colspan="2">
+                    Payment Method
+                  </th>
+                </tr>
+                <tr>
+                  <td style="min-width:50px;vertical-align:top;" rowspan="2">
+                    <input name="q3_myProducts3[paymentType]" class="paymentTypeRadios" id="input_3_paymentType_credit" type="radio" value="credit">
+                    <label for="input_3_paymentType_credit">
+                      <div style="display:inline-block;padding-right:4px;">
+                        <img class="paypalpro_img paypalpro_visa" style="display:inline-block;vertical-align:middle;" src="https://cdn.jotfor.ms/images/blank.gif">
+                        <img class="paypalpro_img paypalpro_mc" style="display:inline-block;vertical-align:middle;" src="https://cdn.jotfor.ms/images/blank.gif">
+                        <img class="paypalpro_img paypalpro_amex" style="display:inline-block;vertical-align:middle;" src="https://cdn.jotfor.ms/images/blank.gif">
+                        <img class="paypalpro_img paypalpro_dc" style="display:inline-block;vertical-align:middle;" src="https://cdn.jotfor.ms/images/blank.gif">
+                      </div>
+                    </label>
+                  </td>
+                  
+                </tr>
+              </tbody>
+            </table>
+            
+            
                 <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
                 
                 <input type="reset" value="Clear Selection">
-
-            </form>
-            
-            <button onClick="calcSub()">Calculate Cost</button>
-            <br>
+                
+                </form>
+          
+          
+        
                
         </div>
-   
+        
+        
+        <button class="button" onClick="calcSub()">Calculate Cost</button>
+        
     </body>
     
 </html>

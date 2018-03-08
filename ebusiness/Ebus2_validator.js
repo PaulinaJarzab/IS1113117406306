@@ -71,26 +71,25 @@ function validateDetails(){
         enablebtnPurchase();
         }
         
-    var number;
-    number = document.getElementById("number").value;
-    if (pin==""){
-        alert("Please enter your phone number");
+   var number;
+    pin = document.getElementById("cardnumber").value;
+    if (number==""){
+        alert("Please enter your PIN");
         }
     else if (String(pin).length<10){
-        alert("Please make sure your phone number is accurate");
+        alert("Please make sure your card number is accurate");
         }
     else{
         enablebtnPurchase();
         }
         
-    var cardnumber;
-    cardnumber = document.getElementById("cardnumber").value;
-    if (cardnumber== ""){
-        alert("Please enter your Card Number");
-         return false;
+   var cardnumber;
+    pin = document.getElementById("cardnumber").value;
+    if (cardnumber==""){
+        alert("Please enter your PIN");
         }
-    else if (String(mmyy).length<16){
-        alert("Please make sure your Card Number is accurate");
+    else if (String(pin).length<16){
+        alert("Please make sure your card number is accurate");
         }
     else{
         enablebtnPurchase();

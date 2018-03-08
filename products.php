@@ -21,7 +21,7 @@
     
     
         .products li {
-            width: 270px;
+            width: 320px;
             display: inline-block;
             vertical-align: top;
             text-align:center;
@@ -44,6 +44,9 @@
     <body>
         
         <h1>Products Available for Purchase</h1>
+        
+        <br>
+        <br>
         
         <ul class="products">
             
@@ -78,6 +81,8 @@
             
         </ul>
         
+        <br>
+        <br>
         <br>
         
         <div style= "text-align: center;" >
