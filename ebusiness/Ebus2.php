@@ -53,10 +53,10 @@ session_start();
             
              
              <select id = "myList" name="myList" >
-               <option value = "1">Ireland</option>
-               <option value = "2">United Kindom</option>
-               <option value = "3">Germany</option>
-               <option value = "4">France</option>
+               <option value = "Ireland">Ireland</option>
+               <option value = "United Kindom">United Kindom</option>
+               <option value = "Germany">Germany</option>
+               <option value = "France">France</option>
              </select>
        
          <label for="postalcode">

@@ -1,205 +1,119 @@
 <?php
 session_start();
-
-// Set session variables
-$_SESSION["name"] = $_POST["name"];
-$_SESSION["address"] = $_POST["address"];
-$_SESSION["city"] = $_POST["city"];
-$_SESSION["myList"] = $_POST["myList"];
-$_SESSION["postalcode"] = $_POST["postalcode"];
-$_SESSION["number"] = $_POST["number"];
-$_SESSION["email"] = $_POST["email"];
-       
 ?>
-
 <!DOCTYPE html>
 <html>
     <head>
-         <Title>Receipt</Title>
-         <meta charset="utf-8"/>
-        <!--jQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="cost_calc.js"></script>
+        <title>RECEIPT</title>
+        <meta charset="utf-8"/>
+        <!--Internal Style sheet-->
+        <style>
         
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
-        
-       
-       <style>
-             body {
-
+            .buttonhome {
+                background-color: white;
+                border: none;
+                color: red;
+                padding: 15px 32px;
                 text-align: center;
-
-            }
-
-            .container {
-
-                background-color: #f2f2f2;
-
-                padding: 5px 20px 15px 20px;
-
-                border: 1px solid lightgrey;
-
-                border-radius: 3px;
-
-}
-
-
-
-
-
-            .row {
-
-                display: -ms-flexbox; /* IE10 */
-
-                display: flex;
-
-                -ms-flex-wrap: wrap; /* IE10 */
-
-                flex-wrap: wrap;
-
-                margin: 0 -16px;
-
-}
-
-
-
-            h4 {
-
-            border-bottom: 6px;
-
-            background-color: lightgrey;
-
-            }
-
-            
-
-            h3 {
-
-            border-style: groove;
-
-            }
-
-            .print {
-
-             background-color: #e7e7e7; color: black;;
-
-             display: inline-block;
-
-             color: black;
-
-             border-radius: 8px;
-
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                    }
+                    
+                .buttonprint {
+                background-color: white;
+                border: none;
+                color: black;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                    }
+                    
+                .content {
+                  width: 350px ;
+                  margin-left: auto ;
+                  margin-right: auto ;
+                  text-align: left;
+                  font-size:20px;
+                  
+                    }    
+                    
+                .row {
+                  display: -ms-flexbox; /* IE10 */
+                  display: flex;
+                  -ms-flex-wrap: wrap; /* IE10 */
+                  flex-wrap: wrap;
+                  margin: 0 -16px;
+                }
                 
-
-            }
-
-            .print:hover {
-
-             background-color: black;
-
-             cursor: pointer;
-
-                color: white;
-
-             
-
-            }
-
-            .button {
-
-             background-color: #e7e7e7; color: black;;
-
-             display: inline-block;
-
-             color: black;
-
-             border-radius: 8px;
-
-                
-
-            }
-
-            .home:hover {
-
-             background-color: green;
-
-             cursor: pointer;
-
-                color: white;
-
-             
-
-            }
-            </style>
-
+                .container {
+                  background-color: black;
+                  padding: 10px 20px 15px 20px;
+                  border: 1px solid lightgrey;
+                  border-radius: 3px;
+                  color:white;
+                 
+                }
+                h4 {
+                    font-size:50px;
+                }
+        </style>
     </head>
     
     <body>
-        <div style="margin-right:auto;margin-left:auto;width:350px;">
-
+        <!--Adding the content part of the page which is then wrapped using the row and container divs-->
+        <div class="content">
         <div class="row">
-
         <div class="container">
-            
-        <h4>Purchase Receipt</h4>
-        
-        
-        
-    
-       
-         <?php 
-        // Echo session variables that were set on previous page
-        echo "Total: $ " . $_SESSION["total"] . ". <br />";
-        echo "Customer name: " . $_SESSION["name"] . ". <br />";
-        echo "Email: " . $_SESSION["email"] . ". <br />";
-        echo "Address: <br /> " . $_SESSION["address"] . " <br />";
-        echo " " . $_SESSION["city"] . " <br />";
-        echo " " . $_SESSION["country"] . "<br />";
-        echo " " . $_SESSION["postalcode"] . ". <br />";
-        echo "Telephone number: " . $_SESSION["number"] . ". <br />";
+        <h4 style="text-align:center;">RECEIPT</h4>
+                
+        <!--Transferring the variables taken from ebus1 and ebus2-->
+        <?php
+        echo "Customer Name: " . $_POST["name"] . ".";
+        ?>
+        <br/>
+        <?php
+        echo "E-mail: " . $_POST["email"] . ".";
+        ?>
+        <br/>
+        <?php
+        echo "Subtotal: $" . $_SESSION["subtotal"] . ".";
+        ?>
+        <br/>
+        <?php
+        echo "VAT: $" . $_SESSION["vat"] . ".";
+        ?>
+        <br/>
+        <?php
+        echo "Discount: $" . $_SESSION["discount"] . ".";
+        ?>
+        <br/>
+        <?php
+        echo "Total: $" . $_SESSION["total"] . ".";
         ?>
         <?php
-
-        // Echo session variables that were on previous page
-
-            echo "Payment Method: VISA Card."
-
+        echo "Total: $" . $_SESSION["total"] . ".";
         ?>
-       
-         
-       <h4>Thank you for your purchase.</h4>
-
-        
-
-        <button onclick="myPrint()" class="print">Print Receipt</button>
-
-        
-          <a class="button" href="../homepage.html">Home</a>
-            
-
+        <br/> <br/>
+        <a href="../homepage.html" class="buttonhome">Return Home</a>
+        <button onclick="myPrint()" class="buttonprint">Print Receipt</button>
         </div>
-
         </div>
-
         </div>
-
         
-
+        <!--Adding a function to allow a print option-->
         <script>
-
-        function myPrint(){
-
-        window.print();
-
-        }
+        function myPrint() {
+            window.print();
+                }
         </script>
+
         
-      
     </body>
 </html>
