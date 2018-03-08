@@ -17,7 +17,7 @@ session_start();
       <meta content="http://www.jotformeu.com/form/21072246732346" property="og:url">
       <meta content="Please click the link to complete this form." property="og:description">
       <link href="https://cdn.jotfor.ms/favicon.ico" rel="shortcut icon">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     
       <meta name="HandheldFriendly" content="true">
 
       <link href="https://www.jotform.com/form-templates/paypal-pro-payment-form" rel="canonical">
@@ -38,7 +38,7 @@ session_start();
       <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
       <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         
-      <style type="text/css">
+      <style>
 
       .form-label-left{
         width:150px;
@@ -56,7 +56,7 @@ session_start();
       body, html{
         margin:0;
         padding:0;
-        background:false;
+        
       }
 
       .form-all{
@@ -68,7 +68,7 @@ session_start();
       }
       
       .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
-        color: false;
+        
       }
       
       h1 {
@@ -186,32 +186,7 @@ session_start();
                 
                 <br>
                 
-                
-                
-            <table class="form-address-table payment-form-table" style="border:0;" cellspacing="0" cellpadding="4">
-              <tbody>
-                <tr>
-                  <th style="text-align:left;" colspan="2">
-                    Payment Method
-                  </th>
-                </tr>
-                <tr>
-                  <td style="min-width:50px;vertical-align:top;" rowspan="2">
-                    <input name="q3_myProducts3[paymentType]" class="paymentTypeRadios" id="input_3_paymentType_credit" type="radio" value="credit">
-                    <label for="input_3_paymentType_credit">
-                      <div style="display:inline-block;padding-right:4px;">
-                        <img class="paypalpro_img paypalpro_visa" style="display:inline-block;vertical-align:middle;" src="https://cdn.jotfor.ms/images/blank.gif">
-                        <img class="paypalpro_img paypalpro_mc" style="display:inline-block;vertical-align:middle;" src="https://cdn.jotfor.ms/images/blank.gif">
-                        <img class="paypalpro_img paypalpro_amex" style="display:inline-block;vertical-align:middle;" src="https://cdn.jotfor.ms/images/blank.gif">
-                        <img class="paypalpro_img paypalpro_dc" style="display:inline-block;vertical-align:middle;" src="https://cdn.jotfor.ms/images/blank.gif">
-                      </div>
-                    </label>
-                  </td>
-                  
-                </tr>
-              </tbody>
-            </table>
-            
+        
             
                 <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
                 
