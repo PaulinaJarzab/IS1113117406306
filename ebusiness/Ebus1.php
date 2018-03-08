@@ -190,7 +190,7 @@ session_start();
             
                 <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
                 
-                <input type="reset" value="Clear Selection">
+                <input type="reset" value="Clear Selection"/>
                 
                 </form>
           
