@@ -11,6 +11,7 @@ session_start();
       
       <title>Order</title>
       
+      <!-- Copying certain pieces of code from this wesite https://www.jotform.com/form-templates/category/payment-->
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <link title="oEmbed Form" href="https://www.jotform.com/oembed/?format=json&amp;url=http%3A%2F%2Fwww.jotform.com%2Fform%2F21072246732346" rel="alternate" type="application/json+oembed"><link title="oEmbed Form" href="https://www.jotform.com/oembed/?format=xml&amp;url=http%3A%2F%2Fwww.jotform.com%2Fform%2F21072246732346" rel="alternate" type="text/xml+oembed">
       <meta content="JotForm" property="og:title">
@@ -24,11 +25,7 @@ session_start();
       <link href="https://cdn.jotfor.ms/static/formCss.css?3.3.5070" rel="stylesheet" type="text/css">
       <link href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.5070" rel="stylesheet" type="text/css">
       <link href="https://cdn.jotfor.ms/css/printForm.css?3.3.5070" rel="stylesheet" type="text/css" media="print">
-
-
-
-
-      
+ 
       <!--jQuery-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="cost_calc.js"></script>
@@ -38,6 +35,7 @@ session_start();
       <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
       <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         
+      <!--styling website-->
       <style>
 
       .form-label-left{
@@ -91,7 +89,8 @@ session_start();
     
 <body>
      
- <form method="POST" action="Ebus2.php">
+  <!--Using post method to transfer information to another file-->
+  <form method="POST" action="Ebus2.php">
   
             
             <h1 class="form-header" id="header_1" data-component="header">
@@ -105,6 +104,8 @@ session_start();
              <h2> My Products </h2>
              
             <div class="form-input" id="cid_3">
+              
+            <!--creating radio buttons so only one product can be selected at a time-->
             <fieldset data-role="controlgroup" data-type="vertical"> 
 
               
@@ -141,7 +142,7 @@ session_start();
                 
                <label for="subtotal">
                 Sub Total:
-                <input type="text" id="subtotal" value="0.00" readonly/>
+                <input type="text" name="subtotal" id="subtotal" value="0.00" readonly/>
                 </label>
                 
                 <br>
@@ -149,14 +150,14 @@ session_start();
                 <label for="discount">
                 Discount @ 5% <br>
                 (-Discount)
-                <input type="text" id="discount" value="0.00" readonly/>
+                <input type="text" name="discount" id="discount" value="0.00" readonly/>
                 </label>
                 
                 <br>
                 
                 <label for="vat">
                 VAT @ 10% 
-                <input type="text" id="vat" value="0.00" readonly/>
+                <input type="text" name="vat" id="vat" value="0.00" readonly/>
                 </label>
                 
                 <br>
@@ -171,6 +172,7 @@ session_start();
             
                 <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
                 
+                <!--reset button to clear choice-->
                 <input type="reset" value="Clear Selection"/>
                 
                 </form>
@@ -180,7 +182,7 @@ session_start();
                
         </div>
         
-        
+        <!--button calculating subtotal/vat/discount/total-->
         <button class="button" onClick="calcSub()">Calculate Cost</button>
         
     </body>

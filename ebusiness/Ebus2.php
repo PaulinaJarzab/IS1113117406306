@@ -11,6 +11,7 @@ session_start();
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
          
+        <!--links to jquery-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -20,8 +21,10 @@ session_start();
         
         </head>
     <body>
-        <div data-role="main" class="ui-content">
         
+        
+        <div data-role="main" class="ui-content">
+        <!--Using post method to transfer information to another file-->
         <form method="POST" action="Ebus3.php" >
         
             
@@ -112,6 +115,41 @@ session_start();
             // Set session variables
 
             $_SESSION["total"] = $_POST["total"];
+
+            ?> 
+             <?php
+
+            // Set session variables
+
+            $_SESSION["subtotal"] = $_POST["subtotal"];
+
+            ?>
+             <?php
+
+            // Set session variables
+
+            $_SESSION["vat"] = $_POST["vat"];
+
+            ?>
+             <?php
+
+            // Set session variables
+
+            $_SESSION["discount"] = $_POST["discount"];
+
+            ?>
+             <?php
+
+            // Set session variables
+
+            $_SESSION["email"] = $_POST["email"];
+
+            ?>
+             <?php
+
+            // Set session variables
+
+            $_SESSION["name"] = $_POST["name"];
 
             ?>
     </body>

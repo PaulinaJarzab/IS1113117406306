@@ -4,7 +4,7 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
-        <title>RECEIPT</title>
+        <title>Receipt</title>
         <meta charset="utf-8"/>
         <!--Internal Style sheet-->
         <style>
@@ -71,9 +71,9 @@ session_start();
         <div class="content">
         <div class="row">
         <div class="container">
-        <h4 style="text-align:center;">RECEIPT</h4>
+        <h4 style="text-align:center;">Receipt</h4>
                 
-        <!--Transferring the variables taken from ebus1 and ebus2-->
+        <!--Transferring the variables taken from Ebus1 and Ebus2-->
         <?php
         echo "Customer Name: " . $_POST["name"] . ".";
         ?>
@@ -97,9 +97,7 @@ session_start();
         <?php
         echo "Total: $" . $_SESSION["total"] . ".";
         ?>
-        <?php
-        echo "Total: $" . $_SESSION["total"] . ".";
-        ?>
+       
         <br/> <br/>
         <a href="../homepage.html" class="buttonhome">Return Home</a>
         <button onclick="myPrint()" class="buttonprint">Print Receipt</button>
